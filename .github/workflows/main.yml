@@ -17,12 +17,12 @@ jobs:
         env:
           # JFrog platform url (for example: https://acme.jfrog.io)
           JF_URL: ${{ vars.JF_URL }}
-          JFROG_CLI_LOG_LEVEL: "DEBUG" 
+          
           
         with:
           # Name of the OIDC provider as specified on the OIDC integration page in the JFrog Platform
           oidc-provider-name: amitl-github-cli
-          JFROG_CLI_LOG_LEVEL: "DEBUG" 
+          version: latest
 
       - name: Run JFrog CLI
         run: |
