@@ -27,6 +27,7 @@ jobs:
       - name: Run JFrog CLI
         run: |
           # Ping the server
+          export JFROG_CLI_LOG_LEVEL=DEBUG
           rm -rf ~/.jfrog/locks || true
           jf rt ping
           # Collect environment variables for the build
