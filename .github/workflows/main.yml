@@ -26,6 +26,7 @@ jobs:
       - name: Run JFrog CLI
         run: |
           # Ping the server
+          rm -rf ~/.jfrog/locks || true
           jf rt ping
           # Collect environment variables for the build
           jf audit
