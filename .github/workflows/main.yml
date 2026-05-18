@@ -21,7 +21,7 @@ jobs:
           
         with:
           # Name of the OIDC provider as specified on the OIDC integration page in the JFrog Platform
-          oidc-provider-name: amitl-github-clii
+          oidc-provider-name: amitl-github-cli
           version: latest
 
       - name: Run JFrog CLI
